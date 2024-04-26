@@ -28,7 +28,8 @@
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-scss": "^4.0.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.75.0",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
   },
@@ -39,7 +40,6 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.15",
-    "classnames": "^2.5.1",
-    "sass": "^1.75.0"
+    "classnames": "^2.5.1"
   }
 }

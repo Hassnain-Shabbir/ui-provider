@@ -29,16 +29,16 @@ export default [
       commonjs(),
 
       terser(),
-
-      scss({
-        output: "dist/bundle.css", // specify output path for compiled CSS
-        modules: true, // enable SCSS modules
-      }),
-      postcss({
-        plugins: [require("autoprefixer")], // add autoprefixer plugin
-        extract: true, // extract CSS to a separate file
-        minimize: true, // minify CSS
-      }),
+      scss(),
+      // scss({
+      //   output: "dist/bundle.css", // specify output path for compiled CSS
+      //   modules: true, // enable SCSS modules
+      // }),
+      // postcss({
+      //   plugins: [require("autoprefixer")], // add autoprefixer plugin
+      //   extract: true, // extract CSS to a separate file
+      //   minimize: true, // minify CSS
+      // }),
     ],
   },
   {

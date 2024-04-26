@@ -6,7 +6,7 @@ import React from "react"
 
 import Loader from "../Loader"
 
-import "./styles.module.scss"
+// import "./styles.module.scss"
 
 export type Props = ButtonProps & {
   wrapperClassName?: string
