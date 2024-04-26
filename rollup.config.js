@@ -20,14 +20,12 @@ export default [
       },
     ],
     plugins: [
-      // NEW
       typescript(),
       peerDepsExternal(),
 
       resolve(),
       commonjs(),
 
-      // NEW
       terser(),
     ],
   },
