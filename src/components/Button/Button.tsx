@@ -8,19 +8,25 @@ import Loader from "../Loader"
 
 // import "./styles.module.scss"
 
-export type Props = ButtonProps & {
+// export type Props = ButtonProps & {
+//   wrapperClassName?: string
+//   isLoading?: boolean
+//   className: string
+// }
+
+interface Props extends ButtonProps {
   wrapperClassName?: string
   isLoading?: boolean
 }
 
-const Button: FC<Props> = ({
+const Button = ({
   className,
   wrapperClassName,
   disabled,
   isLoading,
   children,
   ...props
-}) => {
+}: Props) => {
   return (
     <div
       // className={
