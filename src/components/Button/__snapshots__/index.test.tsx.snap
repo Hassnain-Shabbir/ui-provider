@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot disabled 1`] = `
+<div
+  className="btn-wrapper disabled"
+>
+  <ForwardRef(Button)
+    className="button disabled"
+    disabled={true}
+  >
+    <div
+      className="content"
+    >
+      <div>
+        Test
+      </div>
+    </div>
+  </ForwardRef(Button)>
+</div>
+`;
+
+exports[`snapshot required props only 1`] = `
+<div
+  className="btn-wrapper"
+>
+  <ForwardRef(Button)
+    className="button"
+  >
+    <div
+      className="content"
+    >
+      <div>
+        Test
+      </div>
+    </div>
+  </ForwardRef(Button)>
+</div>
+`;

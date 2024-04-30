@@ -1,16 +1,16 @@
-import React from "react"
-import classNames from "classnames"
-import { FC } from "react"
+import React from "react";
+import classNames from "classnames";
+import { FC } from "react";
 
-// import { LoaderIcon } from "../../Icons"
-// import "./styles.module.scss"
+import { LoaderIcon } from "../Icons";
+import "./styles.module.scss";
 
 export type Props = {
-  fullPage?: boolean
-  absolute?: boolean
-  backdrop?: boolean
-  className?: string
-}
+  fullPage?: boolean;
+  absolute?: boolean;
+  backdrop?: boolean;
+  className?: string;
+};
 
 const Loader: FC<Props> = ({ fullPage, absolute, backdrop, className }) => {
   return (
@@ -22,13 +22,13 @@ const Loader: FC<Props> = ({ fullPage, absolute, backdrop, className }) => {
         "'backdrop'": backdrop,
       })}
     >
-      {/* <LoaderIcon
+      <LoaderIcon
         className={classNames("icon", "icon", {
           "full-page": fullPage,
         })}
-      /> */}
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Loader
+export default Loader;

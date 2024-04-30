@@ -1,19 +1,18 @@
-import React from 'react';
 import { ButtonProps } from '@mui/material/Button/Button';
+import { FC } from 'react';
 
-interface AppButtonProps {
-    children: React.ReactNode;
-    variant: "text" | "contained" | "outlined";
-    href: string;
-    disabled: boolean;
-    color: "inherit" | "primary" | "secondary" | "success" | "error" | "info" | "warning";
-}
-declare const AppButton: ({ children, variant, href, disabled, color, }: AppButtonProps) => React.JSX.Element;
-
-interface Props extends ButtonProps {
+type Props$1 = ButtonProps & {
     wrapperClassName?: string;
     isLoading?: boolean;
-}
-declare const Button: ({ className, wrapperClassName, disabled, isLoading, children, ...props }: Props) => React.JSX.Element;
+};
+declare const Button: FC<Props$1>;
 
-export { AppButton, Button };
+type Props = {
+    fullPage?: boolean;
+    absolute?: boolean;
+    backdrop?: boolean;
+    className?: string;
+};
+declare const Loader: FC<Props>;
+
+export { Button, Loader };

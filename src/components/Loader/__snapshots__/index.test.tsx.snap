@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot absolute = true 1`] = `
+<div
+  className="loader loader-wrapper absolute"
+>
+  <LoaderIcon
+    className="icon icon"
+  />
+</div>
+`;
+
+exports[`snapshot fullPage = true 1`] = `
+<div
+  className="loader page-loader-wrapper"
+>
+  <LoaderIcon
+    className="icon icon full-page"
+  />
+</div>
+`;
+
+exports[`snapshot mount only 1`] = `
+<div
+  className="loader loader-wrapper"
+>
+  <LoaderIcon
+    className="icon icon"
+  />
+</div>
+`;

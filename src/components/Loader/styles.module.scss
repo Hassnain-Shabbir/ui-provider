@@ -1,24 +1,54 @@
 @import "src/styles/settings/settings";
+// @import "../../../styles/settings/settings.scss";
 
-.hints-wrapper {
-  max-width: 300px;
-  .hint-help-text {
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 4px;
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.page-loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: color(black, .3);
+
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 99999;
+}
+
+.absolute {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    z-index: 100;
   }
-  .hint {
-    @include white-shadow;
+}
 
-    background-color: color(greyBlue, 0.4);
-    padding: 10px;
-    border-radius: 4px;
+.backdrop {
+  background-color: color(main, .4);
+  z-index: 90;
+}
 
-    //p {
-    //  white-space: nowrap;
-    //  text-overflow: ellipsis;
-    //  overflow: hidden;
-    //}
+.icon {
+  color: color(coral);
+  padding: 20px 0;
+  @include icon-size(30px);
+
+  &.full-page {
+    @include icon-size(80px);
   }
-
 }
