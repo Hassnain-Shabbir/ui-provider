@@ -1,5 +1,5 @@
 import { ButtonProps } from '@mui/material/Button/Button';
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 type Props$1 = ButtonProps & {
     wrapperClassName?: string;
@@ -15,4 +15,9 @@ type Props = {
 };
 declare const Loader: FC<Props>;
 
-export { Button, Loader };
+interface IconButtonProps {
+    children: React.ReactNode;
+}
+declare const IconButton: ({ children }: IconButtonProps) => React.JSX.Element;
+
+export { Button, IconButton, Loader };
