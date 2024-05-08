@@ -32,7 +32,7 @@ export default [
       scss(),
       terser(),
     ],
-    external: ["react", "react-dom"],
+    // external: ["react", "react-dom"],
   },
   {
     input: "dist/esm/types/src/index.d.ts",

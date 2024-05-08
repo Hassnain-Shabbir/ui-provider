@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "ESNext"],
+    "lib": ["DOM", "ES2020"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -10,16 +10,15 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "ESNext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
     "declaration": true,
     "declarationDir": "types",
-    // "sourceMap": true
+    "sourceMap": true,
     "outDir": "dist",
-    // "moduleResolution": "Node",
+    "moduleResolution": "node",
     "rootDir": "."
     // "emitDeclarationOnly": true,
     // "baseUrl": "./",
@@ -27,5 +26,6 @@
     //   "src/*": ["src/*"]
     // }
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "src/**/*.spec.tsx"]
 }
