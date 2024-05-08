@@ -3,8 +3,6 @@ import commonjs from "@rollup/plugin-commonjs"
 import typescript from "@rollup/plugin-typescript"
 import dts from "rollup-plugin-dts"
 import scss from "rollup-plugin-scss"
-
-//NEW
 import terser from "@rollup/plugin-terser"
 import peerDepsExternal from "rollup-plugin-peer-deps-external"
 
@@ -18,7 +16,7 @@ export default [
         file: packageJson.main,
         format: "cjs",
         sourcemap: true,
-        name: "react-lib",
+        // name: "react-lib",
       },
       {
         file: packageJson.module,
@@ -34,6 +32,7 @@ export default [
       scss(),
       terser(),
     ],
+    external: ["react", "react-dom"],
   },
   {
     input: "dist/esm/types/src/index.d.ts",
