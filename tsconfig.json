@@ -1,31 +1,31 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["DOM", "ES2020"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "target": "es2016",
+    "jsx": "react",
     "module": "ESNext",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "moduleResolution": "node",
     "declaration": true,
     "declarationDir": "types",
-    "sourceMap": true,
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "rootDir": "."
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+    // "lib": ["DOM", "ES2020"],
+    // "allowJs": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "resolveJsonModule": true,
+    // "isolatedModules": true,
+    // "noEmit": true,
+    // "sourceMap": true,
+    // "outDir": "dist",
+    // "rootDir": "."
     // "emitDeclarationOnly": true,
     // "baseUrl": "./",
     // "paths": {
     //   "src/*": ["src/*"]
     // }
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "src/**/*.spec.tsx"]
+  }
+  // "include": ["src/**/*"],
+  // "exclude": ["node_modules", "build", "src/**/*.spec.tsx"]
 }
