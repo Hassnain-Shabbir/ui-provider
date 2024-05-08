@@ -16,21 +16,27 @@ export default [
     output: [
       {
         file: packageJson.main,
+        format: "cjs",
+        sourcemap: true,
+        name: "react-lib",
+      },
+      {
+        file: packageJson.module,
         format: "esm",
         sourcemap: true,
       },
     ],
     plugins: [
-      typescript(),
       peerDepsExternal(),
       resolve(),
       commonjs(),
-      terser(),
+      typescript({ tsconfig: "./tsconfig.json" }),
       scss(),
+      terser(),
     ],
   },
   {
-    input: "dist/cjs/types/src/index.d.ts",
+    input: "dist/esm/types/src/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts.default()],
     external: [/\.scss$/],
